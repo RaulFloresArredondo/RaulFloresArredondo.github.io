@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Registro</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="Raul Flores A.">
+        <meta name="date" content="26 mayo del 2023">
+    </head>
+    <body style='background-color: beige'>
+        <div>
+            <center><h1 style='background-color: gray'>Registro</h1></center>
+            <center><form>
+                <label for="phone">¿Cuál es tu numero de telefono?</label><br>
+                <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{4}-[0-9]{3}"><br><br>
+                <label for='email'>Ingrese tu correo electronico al cual desea recibir notificaciones:</label>
+                <input type='email' id='email' name='email'><br><br>
+                <label for="mesCum">¿En que mes y que año cumples 20 años?</label>
+                <input type='month' id='mesCum' name='mesCum'><br><br>
+                <label for="birthday">¿Cual es tu fecha de nacimiento?</label>
+                <input type="date" id="birthday" name="birthday"><br><br>
+                <label>Selecciona tu genero:</label><br>
+                <label for="txtMasculino">Maculino</label>
+                <input type="radio" id="txtMasculino" name="txtGenero" value="Masculino">
+                <label for="txtFemenino">Femenino</label>
+                <input type="radio" id="txtFemenino" name="txtGenero" value="Femenino">
+                <label for="txtOtro">Otro</label>
+                <input type="radio" id="txtOtro" name="txtGenero" value="Otro"><br><br>
+                <label for="txtEdad">¿Cuál es su edad?</label>
+                <input type="number" id="txtEdad" name="txtEdad" placeholder="Ingresa  tu edad"><br><br>
+                <label for="favcolor">¿Cuál es su color favorito?</label><br>
+                <input type="color" id="favcolor" name="favcolor"><br>
+                <label>Selecciona la opcion:</label><br>
+                <label for="nombre1">Raul</label>
+                <input type="checkbox" id="nombre1" name="nombre1" value="Raul"><br><br>
+                <label>¿Cuál es tu marca de computadoras favorita?</label><br>
+                <input list="marca" name="marca">
+                <datalist id="marca">
+                    <option value="HP">
+                    <option value="Apple">
+                    <option value="Lenovo">
+                    <option value="Honor">
+                    <option value="Huawei">
+                </datalist><br><br>
+                <textarea name="textarea" rows="10" cols="50">Tiene algun comentario sobre este formulario?</textarea><br><br>
+                <label for="homepage">Pagina de inicio de sesión...</label>
+                <input type="url" id="homepage" name="homepage"><br><br>
+                <input type="button" onclick="alert('Regresando')" value="Regresar"><br><br>
+                <input type="reset">
+                </form></center>
+        </div>
+    </body>
+</html>
